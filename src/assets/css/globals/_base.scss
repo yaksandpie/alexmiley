@@ -1,0 +1,31 @@
+//  apply a natural box layout model to all elements  for more info: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+* {
+	box-sizing: border-box; 
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.2;
+  color: $c-dark_green;
+}
+
+a {
+  $current_color: $c-aqua;
+
+  text-decoration: none;
+  color: $current_color;
+  transition: color .2s linear;
+
+  &:hover {
+    color: darken($current_color, 10%);
+  }
+}
+
+em {
+  color: $c-cream;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}

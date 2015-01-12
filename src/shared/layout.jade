@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title Alex Miley - Web Developer
+
+    block css
+      link(
+        href='/css/application.css'
+        rel='stylesheet'
+        type='text/css'
+      )
+
+    block meta
+      meta(
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+      )
+
+      meta(
+        http-equiv="Content-Type"
+        content="text/html; charset=UTF-8"
+      )
+
+    include _favicons.jade
+body
+  include header.jade
+
+  block content
+
+  include footer.jade
+
+  block javascript
+    script(src='/js/jquery-2.1.1.min.js')
+    script(src='/js/main.js')

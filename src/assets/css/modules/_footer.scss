@@ -1,0 +1,40 @@
+.main_footer {
+  background: $c-dark_green;
+  font-family: $f-sans;
+  text-align: center;
+}
+
+.main_footer-container {
+  @extend %container;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.contact-item {
+  margin-bottom: 40px;
+
+  @include bp(sister-bear) {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-bottom: 0;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    margin-bottom: 10px;
+    font-size: 50px;
+
+    @include bp(sister-bear) {
+      font-size: 40px;
+    }
+  }
+
+  a {
+    color: $c-off_white;
+    word-break: break-all;
+
+    &:hover {
+      color: $c-cream;
+    }
+  }
+}

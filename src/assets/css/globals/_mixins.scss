@@ -1,0 +1,32 @@
+/* Mixins */
+@mixin right-triangle($size: 15px, $color: $c-black) {
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: $size $size 0 0;
+	border-color: $color transparent transparent transparent;
+}
+
+@mixin clearfix() {
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}
+
+/* Media Query Fun */
+@mixin bp($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}

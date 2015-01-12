@@ -1,0 +1,78 @@
+// quick mixin for using icon font in :before :after
+@mixin icon_stuff() {
+  font-family: 'icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  // Better Font Rendering =========== 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  @include icon_stuff();
+}
+
+.icon-facebook:before {
+  content: "\ea8c";
+}
+
+.icon-twitter:before {
+  content: "\ea91";
+}
+
+.icon-github:before {
+  content: "\eab3";
+}
+
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+.icon-heart:before {
+  content: "\e600";
+}
+
+.icon-sound:before {
+  content: "\e605";
+}
+
+.icon-user:before {
+  content: "\e606";
+}
+
+.icon-bulb:before {
+  content: "\e607";
+}
+
+.icon-pen:before {
+  content: "\e601";
+}
+
+.icon-phone:before {
+  content: "\e608";
+}
+
+.icon-mail:before {
+  content: "\e609";
+}
+
+.icon-note:before {
+  content: "\e60a";
+}
+
+.icon-paperplane:before {
+  content: "\e602";
+}
+
+.icon-study:before {
+  content: "\e603";
+}
+
+.icon-lab:before {
+  content: "\e604";
+}

@@ -1,0 +1,57 @@
+.hero {
+  background-color: $c-hero-bg;
+
+  @include bp(baby-bear) {
+    height: 300px;
+  }
+
+  @include bp(mama-bear) {
+    height: 400px;
+  }
+
+  @include bp(papa-bear) {
+    height: 600px;
+  }
+}
+
+.hero-inner {
+  @extend %container;
+  height: 100%;
+  width: 100%;
+  background: url(/images/hero_sml.jpg) no-repeat center center;
+  background-size: cover;
+
+  @include bp(mama-bear) {
+    background-image: url(/images/hero_med.jpg);
+  }
+
+  @include bp(papa-bear) {
+    background-image: url(/images/hero_lrg.jpg);
+  }
+}
+
+.hero-description {
+  max-width: 800px;
+  padding: 20px;
+  margin: auto;
+  font-size: 2em;
+  font-family: $f-serif;
+  color: $c-off_white;
+  text-align: center;
+  line-height: 1.5;
+
+  @include bp(baby-bear) {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @include bp(mama-bear) {
+    top: calc(50% + 25px);
+    font-size: 2.5em;
+  }
+
+  @include bp(papa-bear) {
+    font-size: 3em;
+  }
+}

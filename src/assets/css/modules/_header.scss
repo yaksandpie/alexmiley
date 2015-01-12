@@ -1,0 +1,83 @@
+.main_header {
+  width: 100%;
+  font-family: $f-sans;
+  text-align: center;
+  background: $c-dark_green;
+  color: $c-off_white;
+
+  @include bp(mama-bear) {
+    position: fixed;
+    z-index: 1;
+    opacity: .95;
+  }
+}
+
+.main_header-inner {
+  @extend %container;
+  position: relative;
+  padding: 10px;
+
+  @include bp(mama-bear) {
+    padding: 20px;
+    text-align: right;
+  }
+}
+
+.main_nav-link {
+  $current_color: $c-off_white;
+
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: $current_color;
+
+  &:hover {
+    color: darken($current_color, 20%);
+  }
+}
+
+.main_nav {
+  padding-bottom: 10px;
+
+  @include bp(mama-bear) {
+    padding-bottom: 0;
+  }
+}
+
+// Monogram
+.monogram {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: $f-sans;
+  font-size: 2em;
+  white-space: nowrap;
+
+  @include bp(mama-bear) {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+}
+
+.monogram-letter {
+  $current_color: $c-off_white;
+
+  display: inline-block;
+  vertical-align: top;
+  color: $current_color;
+
+  &:hover {
+    color: $current_color;
+  }
+
+  & + & {
+    $bar_spacing: 10px;
+
+    padding-left: $bar_spacing;
+    border-left: 3px solid $current_color;
+    margin-left: $bar_spacing;
+  }
+}
