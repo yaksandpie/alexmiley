@@ -18,7 +18,7 @@
   @extend %container;
   height: 100%;
   width: 100%;
-  background: url(/images/hero_sml.jpg) no-repeat center center;
+  background: url(/images/hero_sml.jpg) no-repeat center center fixed;
   background-size: cover;
 
   @include bp(mama-bear) {

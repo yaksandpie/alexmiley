@@ -14,6 +14,10 @@
 
 .about-description {
   @extend %content-description;
+
+  p {
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -164,8 +168,11 @@
 
 .look_at_me-intro {
   @extend %content-intro;
+  display: block;
   width: 100px;
   padding-top: 20px;
+  padding-bottom: 0;
+  margin: auto;
 
   @include bp(mama-bear) {
     padding-top: 60px;
@@ -176,6 +183,11 @@
   @extend %content-description;
   width: calc(100% - 100px);
   max-width: 760px;
+  display: block;
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+  font-style: italic;
 
   a {
     text-decoration: underline;
