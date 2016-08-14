@@ -3,10 +3,10 @@ extends ../shared/layout
 block content
   section.hero
     .hero-inner
-      h1.hero-description 
-        | Hello! 
+      h1.hero-description
+        | Hello!
         br
-        | My name is 
+        | My name is
         em Alex Miley
         br
         | and I'm a web developer.
@@ -15,13 +15,13 @@ block content
   .about-outer
     section#about.about
       section.about-intro So, you're wondering why I'm different.
-      section.about-description 
-        p I implement design with usability, simplicity, and the user in mind. I specialize in user interface development and user experience with a strong fluency on front-end development. That's not to say that I don't have back-end chops. 
+      section.about-description
+        p I implement design with usability, simplicity, and the user in mind. I specialize in user interface development and user experience with a strong fluency on front-end development. That's not to say that I don't have back-end chops.
         p Tools and techniques: HTML5 [Slim, Jade, Haml], CSS3 [Sass, SCSS, SMACSS], BEM, Javascript [jQuery, Coffeescript], Ruby on Rails, Node, Grunt, and MORE!
 
   .skills-outer
     section#skills.skills
-      section.skills-intro I'm a bonified professional, for reals.
+      section.skills-intro I'm a bona fide professional, for reals.
       section.skills-description
         .skills-tool
           span.skills-tool-icon--education
@@ -40,14 +40,14 @@ block content
           .skills-tools-content
             h3 Passion
             p There’s nothing like sitting down and watching someone use something that you've created - This opportunity to refine the project is golden. That, along with all the great things coming from front-end technologies, make this an amazing time to be a front-end developer.
-  
+
 
   .look_at_me-outer
     section.look_at_me
       section.look_at_me-intro
         a(href="https://github.com/yaksandpie/alexmiley" target="_blank")
           span.icon-github
-      section.look_at_me-description 
+      section.look_at_me-description
         | This site was made using a Grunt workflow using Jade templates and a SCSS foundation. Head on over to #[a(href="https://github.com/yaksandpie/alexmiley" target="_blank") my Github account] to view the source.
 
 
@@ -56,8 +56,14 @@ block content
       section.work-intro Here's some stuff I've work on.
       section.work-description
         .work-item
+          h3 Idealist.org
+          p The mission of the organization is what initially caught my eye (and heart). I was on the Communciations and Engagement team. We responded to the digital needs of the organization in terms of its mission. I worked with a legacy codebase written in Python and using Genshi templates styled with Sass. After a quick assessement on the front-end, I knew my first task was to remove the dependency on Compass so that I was able to upgrade Sass above 3.2. A refactor and some changes to the build system to use node-sass rather than Ruby for Sass had not only opened the door to the latest and greatest features but also cut the build time by 50%. At that point, I had inherited the CSS infrastructure and became the primary developer for the site styles. React and Javascript were on the list of heavily used technologies for me. With React, I was able to build the Our Team, /Idealists, and the About Us pages. Before Idealist closed its doors on the developer office, I was undergoing a site-wide refactor to unify design styles.
+          p The technologies being used are: Javascript, React, SCSS, Python, Genshi templates, Optimizely, Google Analtyics.
+
+        .work-item
           h3 JobHunt: A Personal Project
-          p I always found it challenging while looking for different work to keep track of the various positions that I've applied for and in what state those positions are in (i.e. Did I actually apply? Have I heard back? Did I get an interview?). So, in order to put some order into the job hunt, I created a quick little web app that does that for me. #[a(href="http://hunt-is-on.heroku.com/" target="_blank") JobHunt] is that web app. Built in Ruby on Rails and from scratch. This project put me in the seat as a full-stack dev as I delved into every nook and cranny of Rails.
+          p I always found it challenging while looking for different work to keep track of the various positions that I've applied for and in what state those positions are in (i.e. Did I actually apply? Have I heard back? Did I get an interview?). So, in order to put some order into the job hunt, I created a quick little web app that does that for me. #[a(href="https://github.com/yaksandpie/jobhunt" target="_blank") JobHunt] is that web app. Built in Ruby on Rails and from scratch. This project put me in the seat as a full-stack dev as I delved into every nook and cranny of Rails.
+
         .work-item
           h3 FINE Design Group
           p Working at a digital agency has given me more experience than I had originally anticipated. I was able to be lead front-end developer on many projects including, but not limited to, #[a(href="http://www.kimptonhotels.com" target="_blank") Kimpton Hotels], #[a(href="http://www.dcm.com" target="_blank") DCM Ventures] (this project was a back-end as well as front-end challenge for me), and #[a(href="https://www.ste-michelle.com/" target="_blank") Chateau Ste. Michelle]. I worked on a handful of internal projects, such as a repository for designs and slideshows. Working with highly talented designers was immensely useful for me as I learned pixel-perfect development as well as refining my negotiation skills when a design got a bit out of scope.
