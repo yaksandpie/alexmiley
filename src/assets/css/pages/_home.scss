@@ -52,8 +52,8 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  padding: 0 10px;
   margin-bottom: 60px;
+  text-align: center;
 
   &:first-child {
     padding-left: 0;
@@ -62,7 +62,6 @@
   @include bp(mama-bear) {
     width: 33%;
     width: calc(100% / 3);
-    text-align: center;
   }
 
   p {
@@ -76,11 +75,14 @@
 }
 
 .skills-tools-content {
-  display: inline-block;
-  vertical-align: top;
-  width: calc(100% - 80px);
-  padding-left: 40px;
   text-align: left;
+
+  @include bp(sister-bear) {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 80px);
+    padding-left: 40px;
+  }
 
   @include bp(mama-bear) {
     width: 100%;
@@ -167,15 +169,27 @@
 }
 
 .look_at_me-intro {
-  @extend %content-intro;
-  display: block;
-  width: 100px;
   padding-top: 20px;
   padding-bottom: 0;
-  margin: auto;
+  text-align: center;
 
   @include bp(mama-bear) {
+    display: block;
+    width: 100%;
     padding-top: 60px;
+    margin: auto;
+
+    .look_at_me-description + & {
+      padding-top: 0;
+    }
+  }
+}
+
+.look_at_me-icon {
+  @include bp(mama-bear) {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
   }
 }
 

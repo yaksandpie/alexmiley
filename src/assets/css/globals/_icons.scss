@@ -8,9 +8,9 @@
   text-transform: none;
   line-height: 1;
 
-  // Better Font Rendering =========== 
+  // Better Font Rendering ===========
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
+  -moz-osx-font-smoothing: grayscale;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -75,4 +75,10 @@
 
 .icon-lab:before {
   content: "\e604";
+}
+
+// Not part of the font icon package
+.svg_icon-codepen {
+  display: block;
+  margin: 0 auto 10px;
 }

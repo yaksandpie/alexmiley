@@ -6,7 +6,7 @@ block content
       h1.hero-description
         | Hello!
         br
-        | My name is
+        | My name is&nbsp;
         em Alex Miley
         br
         | and I'm a web developer.
@@ -42,13 +42,20 @@ block content
             p There’s nothing like sitting down and watching someone use something that you've created - This opportunity to refine the project is golden. That, along with all the great things coming from front-end technologies, make this an amazing time to be a front-end developer.
 
 
-  .look_at_me-outer
+  aside.look_at_me-outer
     section.look_at_me
       section.look_at_me-intro
-        a(href="https://github.com/yaksandpie/alexmiley" target="_blank")
+        a(href="https://github.com/yaksandpie/alexmiley" class="look_at_me-icon" target="_blank")
           span.icon-github
       section.look_at_me-description
         | This site was made using a Grunt workflow using Jade templates and a SCSS foundation. Head on over to #[a(href="https://github.com/yaksandpie/alexmiley" target="_blank") my Github account] to view the source.
+
+      section.look_at_me-intro
+        a(href="https://github.com/yaksandpie/alexmiley" class="look_at_me-icon" target="_blank")
+          svg(viewBox="80 80 350 350" height="70px" width="70px" xmlns="http://www.w3.org/2000/svg")
+            path(fill="currentColor" d="M427 201.9c-0.6-4.2-2.9-8-6.4-10.3L264.2 87.3c-4.9-3.3-11.4-3.3-16.3 0L91.4 191.6c-4 2.7-6.5 7.4-6.5 12.2v104.3c0 4.8 2.5 9.6 6.5 12.2l156.4 104.3c4.9 3.3 11.4 3.3 16.3 0L420.6 320.4c4-2.6 6.6-7.4 6.6-12.2V203.9C427.1 203.2 427.1 202.6 427 201.9 427 201.7 427.1 202.6 427 201.9zM270.7 127.1l115.2 76.8 -51.5 34.4 -63.8-42.7V127.1zM241.3 127.1v68.6l-63.8 42.7 -51.5-34.4L241.3 127.1zM114.3 231.4l36.8 24.6 -36.8 24.6V231.4zM241.3 384.9L126.1 308.1l51.5-34.4 63.8 42.6V384.9zM256 290.8l-52-34.8 52-34.8 52 34.8L256 290.8zM270.7 384.9V316.3l63.8-42.6 51.5 34.4L270.7 384.9zM397.7 280.6l-36.8-24.6 36.8-24.6V280.6z")
+      section.look_at_me-description
+        | Also, take a peek at my sandbox area over on #[a(href="http://codepen.io/yaksandpie/pens/public/") my Codepen account].
 
 
   .work-outer
@@ -87,6 +94,3 @@ block content
           h3 Innovative Interfaces, Inc.
           p My professional career began as a User Interface Engineer. Mainly, I helped support the UI on the #[a(href="http://encoreforlibraries.com/" target="_blank") Encore] (a library catalog search/discovery system) product in a 3-5 person team. I became the UI Engineer lead for a product called #[a(href="http://www.iii.com/products/reporter.shtml" target="_blank") Reporter] (an internal application used by libraries to analyze statistics). As a team, we initiated the company's first usability tests on Encore, which was awesome!
           p The framework that was being used was Tapestry 4.1 using Dojo. Also, the occasional splash of JSP was needed to understand some other products.
-
-
-
