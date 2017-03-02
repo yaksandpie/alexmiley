@@ -74,11 +74,11 @@ module.exports = function(grunt) {
     watch: {
       jade: {
         files: '**/*.jade',
-        tasks: [ 'jade' ]
+        tasks: [ 'jade', 'copy']
       },
 
       html: {
-        files: '**/*.jade',
+        files: '**/*.html',
         tasks: [ 'copy' ]
       },
 
@@ -95,6 +95,11 @@ module.exports = function(grunt) {
       autoprefixer: {
         files: '**/*.css',
         tasks: [ 'autoprefixer' ]
+      },
+
+      css: {
+        files: '**/*.css',
+        tasks: [ 'copy' ]
       },
 
       livereload: {
