@@ -65,7 +65,7 @@ body {
 	vertical-align: top;
 	color: #8d8e71;
 	line-height: .8;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 #my-name {
@@ -73,12 +73,27 @@ body {
 	padding-top: 10px;
 	padding-left: 50px;
 	padding-bottom: 10px;
-	font-size: 6em;
+	font-size: 5em;
 	text-transform: uppercase;
 	text-align: left;
 }
 
 #my-name:first-line { font-size: 1.18em; }
+
+.summary {
+	padding: 0 50px;
+	margin-top: 0;
+	color: #778592;
+	font-size: 1.1em;
+}
+
+#my-mobile {
+	display: block;
+	padding: 0 1em .75em 1.2em;
+	color: #8d8e71;
+	line-height: .8;
+	font-size: 1.1em;
+}
 
 #personal-deets {
 	display: inline-block;
@@ -107,6 +122,11 @@ body {
 
 #my-email {
 	padding: 1.8em 0;
+}
+
+span#my-website {
+	display: block;
+	line-height: .8;
 }
 
 #my-street, #my-region, #my-website, #my-email {
@@ -173,6 +193,14 @@ body {
 	margin: .25em 0;
 }
 
+.job-duration {
+	font-size: .9em;
+}
+
+.job-title {
+	font-size: 1.1em;
+}
+
 .company, .job-desc {
 	color: #939ea9;
 	margin: .25em 0;
@@ -202,4 +230,9 @@ body {
 		-webkit-box-shadow: none;
 		box-shadow: none;
 	}
+
+	.qualifications {
+		page-break-before: always;
+	}
+
 }
